@@ -110,7 +110,7 @@ function generateCompliment()
 
 function showCode() {
     stopMusic();
-    window.open("https://github.com/TonRepoGit/ProjetJeanBabe", "_blank"); // Mets un vrai lien GitHub ou un texte explicatif
+    window.open("https://github.com/winesound/babe", "_blank"); 
 }
 
 document.addEventListener("DOMContentLoaded", function () {
