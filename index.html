@@ -19,8 +19,7 @@
     <button onclick="generateCompliment()">💬 Boîte à compliments</button>
     <button onclick="showCode()">💻 Voir le code</button>
     <div id="output"></div>
-
-    <script src="script.js"></script> <!-- On lie le JavaScript ici -->
+    <script src="script.js"></script> 
     <script>
         console.log("Le script est bien chargé !");
 </body>
@@ -31,3 +30,13 @@
     </audio>
 </div>
 </html>
+<script>
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+}, false);
+
+document.addEventListener("dragstart", function(e) {
+    e.preventDefault();
+}, false);
+</script>
+
