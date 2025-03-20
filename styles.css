@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Bartex-Regular"; 
+    src: url("fonts/Bartex-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "PlayfairDisplay-Italic-VariableFont_wght";
+    src: url("fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "PlayfairDisplay-VariableFont_wght";
+    src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+    text-align: center;
+    background-color: #8e2594;
+    font-family: "PlayfairDisplay-Italic-VariableFont_wght";
+    color: #ffcfec;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #ffcfec;
+    font-family: "Bartex-Regular";
+    font-size: 72px;
+}
+
+button {
+    background-color: #fed100;
+    border: none;
+    font-family: "PlayfairDisplay-VariableFont_wght";
+    padding: 10px 20px;
+    margin: 10px;
+    margin-bottom: 50px;
+    font-size: 28px;
+    cursor: url("curseur-babe1.png"), auto;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #fecf0086;
+    color: white;
+}
+
+img {
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 10px
+}
+.sparkle-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.sparkle-container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: url('images/sparkles.gif') center/cover no-repeat;
+    opacity: 0.8;
+    pointer-events: none; /* Ne bloque pas les clics */
+    z-index: -1;
+    animation: sparkleAnimation 1.5s infinite alternate;
+}
+.sparkle-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+@keyframes sparkleAnimation {
+    0% { opacity: 0.6; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.1); }
+}
+
+
+@keyframes sparkleAnimation {
+    0% { opacity: 0.6; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.1); }
+}
+
+#lecteur-container {
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    width: 100%;              /* Utilise toute la largeur */
+    margin-top: 20px;         /* Espace entre les boutons et le lecteur */
+    background-color: #fecf0086
+}
+
+#lecteur {
+    width: 300px;             /* Ajuste la largeur du lecteur */
+}
+
+#pluie-coeurs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('images/WiC5.gif');
+    background-size: cover;
+    background-position: contain;
+    opacity: 0.5;  /* Ajuste la transparence si besoin */
+    z-index: -1;  /* Derrière tout le contenu */
+    pointer-events: none; /* Évite que ça bloque les clics */
+}
+
