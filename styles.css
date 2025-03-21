@@ -61,7 +61,7 @@ img {
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: url('images/sparkles.gif') center/cover no-repeat;
+    background: url('images/ZeQY.gif') center/cover no-repeat;
     opacity: 0.8;
     pointer-events: none; /* Ne bloque pas les clics */
     z-index: -1;
@@ -102,7 +102,7 @@ img {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('images/WiC5.gif');
+    background: url('images/ZeQY.gif');
     background-size: cover;
     background-position: contain;
     opacity: 0.5;  /* Ajuste la transparence si besoin */

@@ -28,12 +28,12 @@ function playMusic() {
 function stopMusic() {
     let lecteur = document.getElementById("lecteur");
     lecteur.pause();
-    lecteur.currentTime = 0; // Remet la musique au début
-    lecteur.style.display = "block"; // Cache le lecteur
+    lecteur.currentTime = 0; 
+    lecteur.style.display = "block"; 
 }
 
-
 function showPhoto() {
+    stopMusic();
     document.querySelector("h1").classList.add("hidden");
     const photos = [
         { src:"images/28jui2019.jpg", date: "28 juillet 2019 à Gap"},
@@ -99,7 +99,9 @@ function generateCompliment()
         "J'aime tes yeux",
         "Kevin Mayer ne t'arrive pas à la cheville",
         "Il n'y a personne qui me fasse rire comme toi",
-        "Tu es mon refuge"
+        "Tu es mon refuge",
+        "Tu es très drôle",
+        "C'est toi qui fait les meilleurs cadeaux (j'essaie de te concurrencer avec ce site)"
     ];
     const randomIndex = Math.floor(Math.random() * compliments.length);
     let lecteur = document.getElementById("lecteur");
@@ -116,11 +118,11 @@ function showCode() {
 document.addEventListener("DOMContentLoaded", function () {
     let aujourdHui = new Date();
     let jour = aujourdHui.getDate();
-    let mois = aujourdHui.getMonth() + 1; // Janvier = 0, donc +1
+    let mois = aujourdHui.getMonth() + 1;
 
     let pluie = document.getElementById("pluie-coeurs");
 
-    if (jour === 25 && mois === 2) {
-        pluie.style.background = "url('images/WiC5.gif') repeat";
+    if (jour === 25 && mois === 3) {
+        pluie.style.background = "url('images/6ob.gif') repeat";
     }
 });
